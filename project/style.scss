@@ -1,0 +1,126 @@
+body{
+    background-image: url('images/bg-intro-desktop.png');
+    background-color: hsl(0, 100%, 74%);
+    font-family: 'Poppins', sans-serif;
+    color: #fff;
+    margin: 0;
+    @media (max-width: 800px) {
+        background-image: url('images/bg-intro-mobile.png');
+    }
+    section{
+        display: flex;
+        .text{
+            flex: 1;
+            margin: 300px 0 0 0;
+            .container{
+                padding: 0 10.5% 0 23%;
+                h1{
+                    font-size: 45px;
+                    margin: 0;
+                    line-height: 50px;
+                }
+                p{
+                    font-size: 15px;
+                    margin-top: 20px;
+                }
+            }
+        }
+        .form{
+            flex: 1;
+            margin-top: 75px;
+            color: #000;
+            p{
+                height: 60px;
+                width: 75%;
+                line-height: 60px;
+                background-color: hsl(248, 32%, 49%);
+                text-align: center;
+                color: #fff;
+                font-size: 16px;
+                span{
+                    font-size: 17px;
+                }
+            }
+            form{
+                background-color: #fff;
+                padding-top: 41px;
+                border-radius: 10px;
+                width: 75%;
+                text-align: center;
+                padding-bottom: 45px;
+                input{
+                    position: relative;
+                    background-color: #fff;
+                    border: 1px solid hsl(246, 25%, 77%);
+                    display: block;
+                    margin: 21px 8%;
+                    height: 54px;
+                    width: 78.5%;
+                    padding-left: 30px;
+                    font-size: 18px;
+                    &:focus{
+                        outline-color: hsl(249, 10%, 26%);
+                    }
+                }
+                .wrong{
+                    &::before{
+                        content: '';
+                        background-image: url(images/icon-error.svg);
+                        position: absolute;
+                        right: 37%;
+                        bottom: 40px;
+                        z-index: 2;
+                        width: 24px;
+                        height: 24px;
+                    }
+                }
+                pre{
+                    display: none;
+                    position: relative;
+                    left: 25%;
+                    top: -12px;
+                    color: hsl(0, 100%, 74%);
+                }
+                input:nth-child(1){
+                    margin: 0 8% 21px 8%;
+                }
+                input[type=submit]{
+                    background-color: hsl(154, 59%, 51%);
+                    color: #fff;
+                    width: 85%;
+                }
+                b{
+                    font-size: 11px;
+                    color: hsl(246, 25%, 77%);
+                    margin: 15px 0 45px 0;
+                    b{
+                        color: hsl(0, 100%, 74%);
+                    }
+                }
+            }
+        }
+        @media (max-width: 800px) {
+            flex-direction: column;
+            .text{
+                margin-top: 150px;
+                text-align: center;
+                .container{
+                    padding: 0;
+                    width: 90%;
+                    margin: 0 auto;
+                }
+            }
+            .form{
+                margin: 15px auto 0 auto;
+                width: 90%;
+                p{
+                    width: 100%;
+                }
+                form{
+                    width: 100%;
+                }
+            }
+        }
+    }
+}
+/* this site created by Mohamed Maghraby */

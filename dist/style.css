@@ -1,0 +1,111 @@
+body {
+  background-image: url("images/bg-intro-desktop.png");
+  background-color: #ff7a7a;
+  font-family: 'Poppins', sans-serif;
+  color: #fff;
+  margin: 0; }
+  @media (max-width: 800px) {
+    body {
+      background-image: url("images/bg-intro-mobile.png"); } }
+  body section {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex; }
+    body section .text {
+      -webkit-box-flex: 1;
+          -ms-flex: 1;
+              flex: 1;
+      margin: 300px 0 0 0; }
+      body section .text .container {
+        padding: 0 10.5% 0 23%; }
+        body section .text .container h1 {
+          font-size: 45px;
+          margin: 0;
+          line-height: 50px; }
+        body section .text .container p {
+          font-size: 15px;
+          margin-top: 20px; }
+    body section .form {
+      -webkit-box-flex: 1;
+          -ms-flex: 1;
+              flex: 1;
+      margin-top: 75px;
+      color: #000; }
+      body section .form p {
+        height: 60px;
+        width: 75%;
+        line-height: 60px;
+        background-color: #6055a5;
+        text-align: center;
+        color: #fff;
+        font-size: 16px; }
+        body section .form p span {
+          font-size: 17px; }
+      body section .form form {
+        background-color: #fff;
+        padding-top: 41px;
+        border-radius: 10px;
+        width: 75%;
+        text-align: center;
+        padding-bottom: 45px; }
+        body section .form form input {
+          position: relative;
+          background-color: #fff;
+          border: 1px solid #b9b6d3;
+          display: block;
+          margin: 21px 8%;
+          height: 54px;
+          width: 78.5%;
+          padding-left: 30px;
+          font-size: 18px; }
+          body section .form form input:focus {
+            outline-color: #3e3c49; }
+        body section .form form .wrong::before {
+          content: '';
+          background-image: url(images/icon-error.svg);
+          position: absolute;
+          right: 37%;
+          bottom: 40px;
+          z-index: 2;
+          width: 24px;
+          height: 24px; }
+        body section .form form pre {
+          display: none;
+          position: relative;
+          left: 25%;
+          top: -12px;
+          color: #ff7a7a; }
+        body section .form form input:nth-child(1) {
+          margin: 0 8% 21px 8%; }
+        body section .form form input[type=submit] {
+          background-color: #38cc8c;
+          color: #fff;
+          width: 85%; }
+        body section .form form b {
+          font-size: 11px;
+          color: #b9b6d3;
+          margin: 15px 0 45px 0; }
+          body section .form form b b {
+            color: #ff7a7a; }
+    @media (max-width: 800px) {
+      body section {
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column; }
+        body section .text {
+          margin-top: 150px;
+          text-align: center; }
+          body section .text .container {
+            padding: 0;
+            width: 90%;
+            margin: 0 auto; }
+        body section .form {
+          margin: 15px auto 0 auto;
+          width: 90%; }
+          body section .form p {
+            width: 100%; }
+          body section .form form {
+            width: 100%; } }
+
+/* this site created by Mohamed Maghraby */
